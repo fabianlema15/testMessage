@@ -8,9 +8,9 @@
   <script type="text/javascript">
       function sentMsg(){
           console.log('Sending');
-          window.parent.postMessage("This is a message", "https://fabianlema15.github.io");
+          window.parent.postMessage("This is a message", "*");
           console.log('Sent');
-          window.parent.parent.postMessage("This is a message", "https://fabianlema15.github.io");
+          window.parent.parent.postMessage("This is a message", "*");
           console.log('Sent 2');
       }
   </script>
