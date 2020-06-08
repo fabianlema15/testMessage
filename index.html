@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <script type="text/javascript">
+      function sentMsg(){
+          console.log('Sending');
+          window.postMessage("This is a message", "https://actifidevteam-dev-ed.lightning.force.com");
+          console.log('Sent');
+      }
+  </script>
+</head>
+<!--<body style="background-color:#FDFDFD">-->
+<body style="background-color:#CCC">
+  <button onclick="sentMsg()" >Send</button>
+</body>
+</html>
